@@ -423,6 +423,12 @@ body {
         top: 0;
         transform: rotate(90deg);
     }
+    #menu__toggle:checked ~ .menu__btn  {
+        position:fixed;
+    }
+    #menu__toggle:checked ~ .menu__box  {
+        position:fixed;
+    }
 
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
@@ -438,7 +444,7 @@ body {
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu__btn > span,
@@ -476,6 +482,7 @@ body {
         list-style: none;
         background-color: #ffffffed;
         transition-duration: .25s;
+        z-index: 2;
     }
 
     .menu__box li a {
